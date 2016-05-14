@@ -1,0 +1,388 @@
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: normal;
+    src: url('fonts/Montserrat-Regular.otf');
+}
+
+@font-face {
+    font-family: NexaBold;
+    src: url('fonts/Nexa-Bold.otf');
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url('fonts/Nexa-Light.otf');
+}
+
+body {
+    margin: 0em;
+    padding: 0em;
+}
+
+::selection {
+    background: white;
+    opacity: 0.3;
+}
+
+::-moz-selection {
+    background: white;
+    opacity: 0.3;
+}
+
+*:focus {
+    outline:none !important
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: #a3adb5;
+}
+
+.purple {
+    color: #b39edc;
+}
+
+.cyan {
+    color: #4cdadd;
+}
+
+.more-transparent {
+    opacity: 0.7;
+}
+
+.montserrat-font {
+    font-family: Montserrat, Arial, SansSerif;
+    font-size: 1.1em;
+}
+
+.nexa-font {
+    font-family: NexaBold, Arial, SansSerif;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    font-family: 'Sintony', Arial, SansSerif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Sintony', Arial, SansSerif;
+    opacity: 0.5;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    font-family: 'Sintony', Arial, SansSerif;
+    margin-top: 1.2em;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    font-family: NexaLight, Arial, SansSerif;
+    margin-top: 0.1em;
+    line-height: 200%;
+}
+
+button {
+    padding: 1.7em 5.5em 1.7em 5.5em;
+    border-radius: 0.4em;
+    font-family: NexaBold, Arial, SansSerif;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+button:hover {
+    box-shadow: 0.1em 0.2em 1.5em black;
+    top: 10px;
+}
+
+.button-subscription span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    top: -3px;
+}
+
+.button-subscription span:after {
+    content: '✔';
+    position: absolute;
+    opacity: 0;
+    top: -3px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-subscription:hover span {
+    padding-right: 25px;
+}
+
+
+.button-subscription:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+button:active {
+    transform: translate(0.2em, 0.2em);
+}
+
+.button-cyan {
+    background: #4cdadd;
+    color: white;
+}
+
+.button-purple {
+    background: #b39edc;
+    color: white;
+}
+
+.button-gray {
+    background: transparent;
+    color: #a3adb5;
+    border: 1px solid #a3adb5;
+}
+
+.button-white {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.button-white-purple {
+    background: transparent;
+    color: #b39edc;
+    border: 1px solid #b39edc;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin: 2em 2em 2em 2em;
+}
+
+.button-margin {
+    margin: 1em 1em 1em 1em;
+}
+
+.button-subscription {
+    margin: 1em 1em 1em 1em;
+    vertical-align: bottom;
+    padding: 1.7em 9em 1.7em 9em;
+}
+
+.front-image {
+    margin-top: 2em;
+    box-shadow: 0.5em 0.5em 3em black;
+}
+
+.inline-div {
+    display: inline-block;
+    margin: 3em 3em 3em 3em;
+}
+
+.feature-div {
+    width: 25em;
+}
+
+.subscription-div {
+    width: 28em;
+    height: 48em;
+    border: 2px solid rgba(163, 173, 181, 0.5);
+    border-radius: 0.5em;
+}
+
+.subscription-header-div {
+    background-color: #b39edc;
+    height: 6em;
+    color: white;
+    font-family: NexaBold, Arial, SansSerif;
+    text-align: center;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    margin: -0.1em 0em 0em 0em;
+}
+
+.subscription-feature {
+    padding-bottom: 0.5em;
+    box-shadow: 0.01em 1em 0.03em -0.9em rgba(163, 173, 181, 0.5);
+}
+
+.left-inline-div {
+    float: left;
+    width: 35em;
+    text-align: left;
+}
+
+.right-inline-div {
+    float: right;
+    width: 35em;
+    text-align: left;
+}
+
+.left-text-align {
+    text-align: left;
+}
+
+.bring-to-front {
+    z-index: 10;
+}
+
+.bigger-top-margin {
+    margin-top: 1.5em;
+}
+
+.even-bigger-top-margin {
+    margin-top: 4em;
+}
+
+.lesser-top-margin {
+    margin-top: 0.5em;
+}
+
+.bigger-bottom-padding {
+    padding-bottom: 0.2em;
+}
+
+.lesser-font-size {
+    font-size: 1.1em;
+}
+
+.bigger-line-height {
+    line-height: 4em;
+}
+
+.simple-link {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    font-family: Montserrat, Arial, SansSerif;
+    margin-top: 0.1em;
+    text-decoration: none;
+    color: #b39edc;
+}
+
+.simple-link-small {
+    text-align: left;
+    font-size: 1em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    font-family: Montserrat, Arial, SansSerif;
+    margin-top: 0.1em;
+    text-decoration: none;
+    color: white;
+    display: list-item;
+    list-style-type: none;
+}
+
+#phone {
+    position:relative;
+    bottom:0;
+    left:0;
+    margin-bottom: 0;
+}
+
+.lorem-ipsum {
+    width: 70em;
+}
+
+.lorem-ipsum-small {
+    width: 16em;
+}
+
+#title {
+    margin-top: 1.7em;
+}
+
+#menu {
+    margin-top: 2em;
+    margin-right: 6em;
+    text-align: right;
+}
+
+.menu-item {
+    font-family: Montserrat, Arial, SansSerif;
+    padding: 2em 2em 1.3em 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item-regular {
+    opacity: 0.5;
+}
+
+.menu-item-highlighted {
+    opacity: 1.0;
+    box-shadow: 0.01em 1em 0.03em -0.9em white;
+}
+
+#header {
+    background-image: url('images/Header.png');
+    padding: 2em 2em 2em 2em;
+    /*height: 60.6em;*/
+    display:block;
+    overflow:auto;
+}
+
+#intro {
+    background-color: white;
+    padding: 2em 2em 2em 2em;
+    height: 25em;
+}
+
+#work-with-your-hands {
+    background-color: #f2f2f1;
+    padding: 2em 2em 2em 2em;
+    /*height: 57em;*/
+    display:block;
+    overflow:auto;
+}
+
+#take-a-look {
+    background-color: #b39edc;
+    padding: 2em 2em 2em 2em;
+    /*height: 25em;*/
+    display:block;
+    overflow:auto;
+}
+
+#video-div {
+    background-color: #b39edc;
+    width: 100%;
+    /*height: 58em;*/
+    display:block;
+    overflow:auto;
+}
+
+#features {
+    background-color: #f2f2f1;
+    padding: 2em 2em 2em 2em;
+    /*height: 36em;*/
+    display:block;
+    overflow:auto;
+}
+
+#subscriptions {
+    background-color: white;
+    padding: 2em 2em 2em 2em;
+    /*height: 68em;*/
+    display:block;
+    overflow:auto;
+}
+
+#footer {
+    background-color:#b39edc;
+    padding: 2em 2em 2em 2em;
+    /*height: 16em;*/
+    display:block;
+    overflow:auto;
+}
